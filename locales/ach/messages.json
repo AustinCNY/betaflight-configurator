@@ -1736,6 +1736,33 @@
     "pidTuningDtermSetpointTransitionWarning": {
         "message": "crwdns8732:0$t(warningTitle.message)crwdne8732:0"
     },
+    "pidTuningFfInterpolateSp": {
+        "message": "crwdns10156:0crwdne10156:0"
+    },
+    "pidTuningFfInterpolateSpHelp": {
+        "message": "crwdns10158:0crwdne10158:0"
+    },
+    "pidTuningFfInterpolate": {
+        "message": "crwdns10160:0crwdne10160:0"
+    },
+    "pidTuningFfInterpolateSpOptionNoAverage": {
+        "message": "crwdns10162:0crwdne10162:0"
+    },
+    "pidTuningFfInterpolateSpOptionAverage2": {
+        "message": "crwdns10164:0crwdne10164:0"
+    },
+    "pidTuningFfInterpolateSpOptionAverage3": {
+        "message": "crwdns10166:0crwdne10166:0"
+    },
+    "pidTuningFfInterpolateSpOptionAverage4": {
+        "message": "crwdns10168:0crwdne10168:0"
+    },
+    "pidTuningFfSmoothFactor": {
+        "message": "crwdns10170:0crwdne10170:0"
+    },
+    "pidTuningFfBoost": {
+        "message": "crwdns10172:0crwdne10172:0"
+    },
     "pidTuningProportional": {
         "message": "crwdns5700:0crwdne5700:0"
     },
@@ -3538,6 +3565,9 @@
     },
     "pidTuningDTermLowpassDynType": {
         "message": "crwdns9034:0crwdne9034:0"
+    },
+    "pidTuningDTermLowpassDynExpo": {
+        "message": "crwdns10154:0crwdne10154:0"
     },
     "pidTuningDTermNotchFiltersGroup": {
         "message": "crwdns8749:0crwdne8749:0"
