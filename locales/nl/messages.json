@@ -1488,6 +1488,9 @@
     "receiverRcSmoothingInputManual": {
         "message": "Selecteert of de invoer filter cutoff frequentie automatisch wordt berekend of handmatig wordt geselecteerd door de gebruiker. Automatisch is aanbevolen. Het gebruik van \"Handmatig\" wordt niet aanbevolen voor protocollen zoals Crossfire. Deze kunnen namelijk gedurende de vlucht veranderen."
     },
+    "receiverRcSmoothingInputHz": {
+        "message": "Ingang Afsnijfrequentie"
+    },
     "receiverRcInputType": {
         "message": "Invoer Filter Type"
     },
@@ -1530,6 +1533,24 @@
     "pidTuningDtermSetpointTransitionWarning": {
         "message": "<span class=\"message-negative\"><strong>$t(warningTitle.message):</strong> Het gebruik van een D Setpoint transitie tussen de 0 en 0.1 wordt afgeraden. Mocht je dit wel doen dan kan dit leiden tot instabiliteit en verminderde reactievermogen als je sticks het centrum van hun bereik passeren.</span>"
     },
+    "pidTuningFfInterpolate": {
+        "message": "Modus"
+    },
+    "pidTuningFfInterpolateSpOptionNoAverage": {
+        "message": "Geen gemiddelde"
+    },
+    "pidTuningFfInterpolateSpOptionAverage2": {
+        "message": "Gemiddeld 2"
+    },
+    "pidTuningFfInterpolateSpOptionAverage3": {
+        "message": "Gemiddeld 3"
+    },
+    "pidTuningFfInterpolateSpOptionAverage4": {
+        "message": "Gemiddeld 4"
+    },
+    "pidTuningFfBoost": {
+        "message": "Versterken"
+    },
     "pidTuningProportional": {
         "message": "Proportioneel"
     },
@@ -1548,6 +1569,9 @@
     },
     "pidTuningRcRate": {
         "message": "RC Rate"
+    },
+    "pidTuningMaxVel": {
+        "message": "Max Vel [deg/s]"
     },
     "pidTuningRate": {
         "message": "Rate"
@@ -1593,6 +1617,9 @@
     },
     "pidTuningRatesCurve": {
         "message": "Rates Voorbeeld"
+    },
+    "throttle": {
+        "message": "Gashendel"
     },
     "pidTuningButtonSave": {
         "message": "Opslaan"
@@ -1829,6 +1856,15 @@
     },
     "adjustmentsFunction22_2": {
         "message": "Pitch & Roll F aanpassing"
+    },
+    "adjustmentsFunction26": {
+        "message": "Pitch F aanpassing"
+    },
+    "adjustmentsFunction27": {
+        "message": "Roll F aanpassing"
+    },
+    "adjustmentsFunction28": {
+        "message": "Yaw F aanpassing"
     },
     "adjustmentsFunction29": {
         "message": "OSD Profiel Selectie"
@@ -2101,6 +2137,9 @@
         "message": "T: {{motorsESCTempValue}}&deg;C",
         "description": "To put under the motors in the motors tab. KEEP IT SHORT or not translate. Shows the ESC temperature if available."
     },
+    "motorsMaster": {
+        "message": "Meester"
+    },
     "motorsNotice": {
         "message": "<strong>Motor Test Modus / Arming Waarschuwing:</strong><br />Het verplaatsen van de schuifregelaren of het armen middels je zender zorgt ervoor dat de motoren <strong>gaan draaien</strong>.<br />Om letsel te voorkomen <strong class=\"message-negative\">dien je ALLE propellers te verwijderen</strong> alvorens je deze functie gaat gebruiken.<br />Het inschakelen van deze motor-test modus zal er voor zorgen dat Runaway Takeoff Preventie tijdelijk wordt uitgeschakeld.<br />"
     },
@@ -2128,6 +2167,9 @@
     "sensorsSonarSelect": {
         "message": "Sonar"
     },
+    "sensorsDebugSelect": {
+        "message": "Debug"
+    },
     "sensorsGyroTitle": {
         "message": "Gyroscope - deg/s"
     },
@@ -2140,11 +2182,17 @@
     "sensorsAltitudeTitle": {
         "message": "Hoogte - meters"
     },
+    "sensorsAltitudeHint": {
+        "message": "De hoogte wordt berekend door de informatie van de barometer (indien beschikbaar) te combineren met de hoogtewaarde van de GPS (indien beschikbaar). Als een GPS is aangesloten en een fix heeft, wordt de absolute hoogte boven zeeniveau getoond wanneer de quad niet is ingeschakeld. Wanneer de quad wordt ingeschakeld wordt de hoogte relatief aan de positie van inschakelen getoond."
+    },
     "sensorsSonarTitle": {
         "message": "Sonar - cm"
     },
     "sensorsDebugTitle": {
         "message": "Debug"
+    },
+    "cliInfo": {
+        "message": "<strong>Opmerking:</strong> Als u het CLI tabblad verlaat of als u op Disconnect klikt, zal dit resulteren in het <strong>automatisch</strong> versturen van het commando \"<strong>exit</strong>\". De laatste firmware zal er voor zorgen dat het board <strong>herstart</strong> en alle niet opgeslagen wijzigingen zullen <strong>verloren gaan</strong>.<p><strong><span class=\"message-negative\">Waarschuwing:</span></strong> Sommige CLI commando’s kunnen resulteren in signalen die worden verstuurd naar de motor output pins. Deze signalen kunnen ervoor zorgen dat de motoren gaan draaien als er een batterij is aangesloten! Het is daarom zeer aan te raden <strong>geen batterij aan te sluiten als u commando’s aan het invoeren bent in de CLI</strong>."
     },
     "cliInputPlaceholder": {
         "message": "Schrijf hier je opdrachten. Druk op Tab voor AutoComplete."
@@ -2227,6 +2275,9 @@
     "blackboxLoggingNone": {
         "message": "Geen logbestanden"
     },
+    "blackboxLoggingFlash": {
+        "message": "Aan boord Flash"
+    },
     "blackboxLoggingSdCard": {
         "message": "SD-kaart"
     },
@@ -2262,6 +2313,9 @@
     },
     "dataflashButtonSaveFileDeprecated": {
         "message": "Flash opslaan in bestand... (verouderd)"
+    },
+    "dataflashSaveFileDepreciationHint": {
+        "message": "Het opslaan van blackbox-logs via de configurator is traag en relatief gevoelig voor fouten. Het is aanbevolen om in plaats daarvan '<b>$t(onboardLoggingRebootMscText.message)</b>' te gebruiken. Met behulp hiervan is het mogelijk om Mass Storage Mode te activeren en toegang te krijgen tot uw vlucht controller als opslagapparaat. De logbestanden zijn dan eenvoudig te downloaden."
     },
     "dataflashButtonErase": {
         "message": "Flash wissen"
@@ -2403,6 +2457,9 @@
     },
     "firmwareFlasherManualBaud": {
         "message": "Handmatige baud rate"
+    },
+    "firmwareFlasherManualBaudDescription": {
+        "message": "Handmatige selectie van baud rate voor borden die de standaard snelheid niet ondersteunen of flashen via bluetooth.<br /><span class=\"message-negative\">Opmerking:</span> Wordt niet gebruikt bij het flashen via USB DFU"
     },
     "firmwareFlasherBaudRate": {
         "message": "Baud Rate"
@@ -2613,6 +2670,9 @@
     "ledStripColorModifierTitle": {
         "message": "Kleur aanpassen"
     },
+    "ledStripModeColorsTitle": {
+        "message": "Modus kleuren"
+    },
     "ledStripModeColorsModeOrientation": {
         "message": "Oriëntatie",
         "description": "One of the modes in Color Mode in Led Strip"
@@ -2623,6 +2683,10 @@
     },
     "ledStripModeColorsModeAngle": {
         "message": "Hoek",
+        "description": "One of the modes in Color Mode in Led Strip"
+    },
+    "ledStripModeColorsModeMag": {
+        "message": "Mag",
         "description": "One of the modes in Color Mode in Led Strip"
     },
     "ledStripModeColorsModeBaro": {
@@ -2692,6 +2756,10 @@
     "ledStripWiring": {
         "message": "LED Strip bedrading",
         "description": "One of the modes in Led Strip"
+    },
+    "ledStripWiringMode": {
+        "message": "Bedrading sorteermodus",
+        "description": "One of the wiring modes in Led Strip"
     },
     "ledStripWiringClearControl": {
         "message": "Selectie wissen",
@@ -2873,6 +2941,9 @@
     "pidTuningCellCount": {
         "message": "Aantal cellen"
     },
+    "pidTuningNonProfileFilterSettings": {
+        "message": "Profielonafhankelijke Filterinstellingen"
+    },
     "pidTuningSliderLowFiltering": {
         "message": "Minder filteren",
         "description": "Filter tuning slider low header"
@@ -2884,6 +2955,14 @@
     "pidTuningSliderHighFiltering": {
         "message": "Meer filteren",
         "description": "Filter tuning slider high header"
+    },
+    "pidTuningGyroFilterSlider": {
+        "message": "Gyro-filtervermenigvuldiger:",
+        "description": "Gyro filter tuning slider label"
+    },
+    "pidTuningDTermFilterSlider": {
+        "message": "D Term Filtervermenigvuldiger:",
+        "description": "D Term filter tuning slider label"
     },
     "pidTuningSliderEnableButton": {
         "message": "Sliders inschakelen",
@@ -2901,20 +2980,145 @@
         "message": "Hoog",
         "description": "Tuning Slider High header"
     },
+    "pidTuningMasterSlider": {
+        "message": "Hoofd Vermenigvuldiger:",
+        "description": "Master tuning slider label"
+    },
     "pidTuningPDRatioSlider": {
         "message": "PD Balans:",
         "description": "PD balance tuning slider label"
     },
+    "pidTuningGyroLowpassFiltersGroup": {
+        "message": "Gyro Lowpass Filters"
+    },
+    "pidTuningGyroLowpassFrequency": {
+        "message": "Gyro Lowpass 1 Afsnijfrequentie [Hz]"
+    },
+    "pidTuningGyroLowpassType": {
+        "message": "Gyro Lowpass 1 Filtertype"
+    },
+    "pidTuningGyroLowpassDynMinFrequency": {
+        "message": "Gyro Lowpass 1 Dynamische Min. Afsnijfrequentie [Hz]"
+    },
+    "pidTuningGyroLowpassDynMaxFrequency": {
+        "message": "Gyro Lowpass 1 Dynamische Maximale Afsnijfrequentie [Hz]"
+    },
+    "pidTuningGyroLowpassDynType": {
+        "message": "Gyro Lowpass 1 Dynamisch Filtertype"
+    },
+    "pidTuningGyroLowpass2Frequency": {
+        "message": "Gyro Lowpass 2 Afsnijfrequentie [Hz]"
+    },
+    "pidTuningGyroLowpass2Type": {
+        "message": "Gyro Lowpass 2 Filtertype"
+    },
+    "pidTuningGyroNotchFiltersGroup": {
+        "message": "Gyro Notch Filters"
+    },
+    "pidTuningGyroNotch1Frequency": {
+        "message": "Gyro Notch Filter 1 Middenfrequentie [Hz]"
+    },
+    "pidTuningGyroNotch2Frequency": {
+        "message": "Gyro Notch Filter 2 Middenfrequentie [Hz]"
+    },
+    "pidTuningGyroNotch1Cutoff": {
+        "message": "Gyro Notch Filter 1 Afsnijfrequentie [Hz]"
+    },
+    "pidTuningGyroNotch2Cutoff": {
+        "message": "Gyro Notch Filter 2 Afsnijfrequentie [Hz]"
+    },
+    "pidTuningDynamicNotchFilterGroup": {
+        "message": "Dynamic Notch Filter"
+    },
+    "pidTuningDynamicNotchFilterHelp": {
+        "message": "Dynamic Notch Filter volgt de ruisfrequentie van de motoren. Deze filter plaatst een of twee notch-filters in het midden van deze frequentie."
+    },
     "pidTuningDynamicNotchFilterDisabledWarning": {
         "message": "<strong>Let op:</strong> Het dynamische notch filter is uitgeschakeld. Om het in te schakelen en te configureren, schakel de 'DYNAMIC_FILTER' functie in de '$t(configurationFeatures.message)' sectie op het '$t(tabConfiguration.message)' tabblad."
+    },
+    "pidTuningDynamicNotchRange": {
+        "message": "Dynamic Notch Filter Bereik"
+    },
+    "pidTuningDynamicNotchWidthPercent": {
+        "message": "Dynamic Notch Breedte Percentage"
+    },
+    "pidTuningDynamicNotchQ": {
+        "message": "Dynamic Notch Q"
+    },
+    "pidTuningDynamicNotchMinHz": {
+        "message": "Dynamic Notch Min Hz"
+    },
+    "pidTuningDynamicNotchMaxHz": {
+        "message": "Dynamic Notch Max Hz"
     },
     "pidTuningRpmFilterGroup": {
         "message": "Gyro RPM Filter",
         "description": "Header text for the RPM Filter group"
     },
+    "pidTuningRpmMinHz": {
+        "message": "Gyro RPM Filter Min Frequentie [Hz]",
+        "description": "Text for one of the parameters of the RPM Filter"
+    },
     "pidTuningRpmMinHzHelp": {
         "message": "Minimale frequentie die zal worden gebruikt door het RPM Filter.",
         "description": "Help text for one of the parameters of the RPM Filter"
+    },
+    "pidTuningFilterSettings": {
+        "message": "Profiel Afhankelijke Filterinstellingen"
+    },
+    "pidTuningDTermLowpassFiltersGroup": {
+        "message": "D Term Lowpass Filter"
+    },
+    "pidTuningDTermLowpassType": {
+        "message": "D Term Lowpass 1 Filter Type"
+    },
+    "pidTuningDTermLowpassFrequency": {
+        "message": "D Term Lowpass 1 Cutoff Frequentie [Hz]"
+    },
+    "pidTuningDTermLowpass2Frequency": {
+        "message": "D Term Lowpass 2 Cutoff Frequency [Hz]"
+    },
+    "pidTuningDTermLowpass2Type": {
+        "message": "D Term Lowpass 2 Filter Type"
+    },
+    "pidTuningDTermLowpassDynMinFrequency": {
+        "message": "D Term Lowpass 1 Dynamic Min Cutoff Frequency [Hz]"
+    },
+    "pidTuningDTermLowpassDynMaxFrequency": {
+        "message": "D Term Lowpass 1 Dynamic Max Cutoff Frequency [Hz]"
+    },
+    "pidTuningDTermLowpassDynType": {
+        "message": "D Term Lowpass 1 Dynamic Filter Type"
+    },
+    "pidTuningDTermLowpassDynExpo": {
+        "message": "D Term Lowpass 1 Dynamische Curve Expo"
+    },
+    "pidTuningDTermNotchFiltersGroup": {
+        "message": "D Term Notch Filters"
+    },
+    "pidTuningDTermNotchFrequency": {
+        "message": "D Term Notch Filter Center Frequency [Hz]"
+    },
+    "pidTuningDTermNotchCutoff": {
+        "message": "D Term Notch Filter Cutoff Frequency [Hz]"
+    },
+    "pidTuningYawLospassFiltersGroup": {
+        "message": "Yaw Lowpass Filters"
+    },
+    "pidTuningYawLowpassFrequency": {
+        "message": "Yaw Lowpass-afsnijfrequentie [Hz]"
+    },
+    "pidTuningVbatPidCompensation": {
+        "message": "Vbat PID Compensatie"
+    },
+    "pidTuningItermRotation": {
+        "message": "I Term Rotatie"
+    },
+    "pidTuningSmartFeedforward": {
+        "message": "Slimme Feedforward"
+    },
+    "pidTuningItermRelax": {
+        "message": "I Term Relax"
     },
     "pidTuningItermRelaxAxes": {
         "message": "Assen",
@@ -2926,12 +3130,25 @@
     "pidTuningItermRelaxAxesOptionRPY": {
         "message": "RPY"
     },
+    "pidTuningItermRelaxAxesOptionRPInc": {
+        "message": "RP (alleen increment)"
+    },
+    "pidTuningItermRelaxAxesOptionRPYInc": {
+        "message": "RPY (alleen increment)"
+    },
     "pidTuningItermRelaxType": {
         "message": "Type",
         "description": "Iterm Relax Type selection"
     },
     "pidTuningItermRelaxTypeOptionGyro": {
         "message": "Gyro"
+    },
+    "pidTuningItermRelaxCutoff": {
+        "message": "Afsnijden",
+        "description": "Cutoff value of the I Term Relax"
+    },
+    "pidTuningAbsoluteControlGain": {
+        "message": "Absolute Controle"
     },
     "pidTuningIdleMinRpm": {
         "message": "Dynamische Stationaire Waarde [* 100 RPM]"
@@ -2942,6 +3159,9 @@
     "pidTuningAcroTrainerAngleLimitHelp": {
         "message": "Voegt een nieuwe hoek beperkende modus toe voor piloten die leren vliegen in de acro modus. Het bereik is geldig tussen 10-80 en moet geactiveerd worden met een schakelaar in het tabblad $t(tabAuxiliary.message)."
     },
+    "pidTuningIntegratedYaw": {
+        "message": "Geïntegreerde Yaw"
+    },
     "pidTuningIntegratedYawCaution": {
         "message": "<span class=\"message-negative\">WAARSCHUWING</span>: als je deze functie inschakelt, moet je de YAW PID instellingen aanpassen. Meer informatie <a href=\"https://github.com/betaflight/betaflight/wiki/Integrated-Yaw\" target=\"_blank\" rel=\"noopener noreferrer\">hier</a>"
     },
@@ -2951,11 +3171,17 @@
     "failsafePaneTitleOld": {
         "message": "Ontvanger failsafe"
     },
+    "failsafePulsrangeTitle": {
+        "message": "Geldige Pulse Bereik Instellingen"
+    },
     "failsafeRxMinUsecItem": {
         "message": "Minimale lengte"
     },
     "failsafeRxMaxUsecItem": {
         "message": "Maximale lengte"
+    },
+    "failsafeChannelFallbackSettingsTitle": {
+        "message": "Kanaalterugval instellingen"
     },
     "failsafeChannelFallbackSettingsHelp": {
         "message": "Deze instellingen worden toegepast op afzonderlijke AUX-kanalen of op alle kanalen bij het intreden van fase 1. <strong>Opmerking:</strong> waarden worden opgeslagen in stappen van 25usec, kleine wijzigingen zullen daarom verdwijnen"
@@ -3551,6 +3777,10 @@
         "message": "Richtkruis",
         "description": "One of the elements of the OSD"
     },
+    "osdTextElementArtificialHorizon": {
+        "message": "Kunstmatige horizon",
+        "description": "One of the elements of the OSD"
+    },
     "osdDescElementArtificialHorizon": {
         "message": "Grafische kunstmatige horizon indicator"
     },
@@ -3671,6 +3901,17 @@
     "osdDescElementAvgCellVoltage": {
         "message": "Gemiddelde cel spanning (hoofdspanning van de accu / aantal cellen)"
     },
+    "osdTextElementPitchAngle": {
+        "message": "Hoek: pitch",
+        "description": "One of the elements of the OSD"
+    },
+    "osdTextElementRollAngle": {
+        "message": "Hoek: roll",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRollAngle": {
+        "message": "Numerieke rolhoek in graden"
+    },
     "osdTextElementMainBattUsage": {
         "message": "Batterijverbruik",
         "description": "One of the elements of the OSD"
@@ -3698,6 +3939,10 @@
     },
     "osdDescElementNumericalHeading": {
         "message": "Numerieke weergave van de huidige koers in graden"
+    },
+    "osdTextElementCompassBar": {
+        "message": "Kompas balk",
+        "description": "One of the elements of the OSD"
     },
     "osdDescElementCompassBar": {
         "message": "Grafische kompasbalk die huidige koers toont"
@@ -3801,6 +4046,27 @@
     "osdDescElementFlightDist": {
         "message": "Afstand gevlogen tijdens deze vlucht."
     },
+    "osdTextElementStickOverlayLeft": {
+        "message": "Stick overlay links",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementStickOverlayLeft": {
+        "message": "Overlay voor de linker zender stick positie."
+    },
+    "osdTextElementStickOverlayRight": {
+        "message": "Stick overlay rechts",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementStickOverlayRight": {
+        "message": "Overlay voor de rechter zender stick positie."
+    },
+    "osdTextElementDisplayName": {
+        "message": "Toon naam",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementDisplayName": {
+        "message": "Toon naam zoals is ingesteld door de \"display_name\" cli commando"
+    },
     "osdTextElementEscRpmFreq": {
         "message": "ESC RPM frequentie",
         "description": "One of the elements of the OSD"
@@ -3808,9 +4074,26 @@
     "osdDescElementEscRpmFreq": {
         "message": "RPM frequentie gerapporteerd door ESC telemetry"
     },
+    "osdTextElementRateProfileName": {
+        "message": "Profiel: rate profielnaam",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementRateProfileName": {
+        "message": "Toont de huidige rate profielnaam"
+    },
+    "osdTextElementPidProfileName": {
+        "message": "Profiel: PID profielnaam",
+        "description": "One of the elements of the OSD"
+    },
+    "osdDescElementPidProfileName": {
+        "message": "Toont de huidige PID profielnaam"
+    },
     "osdTextElementOsdProfileName": {
         "message": "Profiel: OSD profielnaam",
         "description": "One of the elements of the OSD"
+    },
+    "osdDescElementOsdProfileName": {
+        "message": "OSD profiel naam zoals deze is ingesteld middels de CLI variabelen \"osd_profile_1_name\", \"osd_profile_2_name\" en \"osd_profile_3_name\""
     },
     "osdTextElementRssiDbmValue": {
         "message": "RSSI dBm waarde",
@@ -4194,6 +4477,10 @@
         "message": "Geselecteerde modus",
         "description": "Title for the actual mode header of the VTX"
     },
+    "vtxActualState": {
+        "message": "Huidige waardes",
+        "description": "Title for the actual values header of the VTX"
+    },
     "vtxType": {
         "message": "VTX type",
         "description": "Text of one of the fields of the VTX tab"
@@ -4427,11 +4714,18 @@
         "message": "Bidirectionele DShot (vereist ESC firmware die dit ondersteund)",
         "description": "Feature for the ESC/Motor"
     },
+    "configurationDshotBidirHelp": {
+        "message": "Stuurt ESC gegevens naar het FC via DShot telemetry. Vereist door RPM Filtering en dynamisch idle. <br> <br>Opmerking: Vereist een compatibel ESC met de juiste firmware, bijvoorbeeld JESC, Jazzmac, BLHeli-32.",
+        "description": "Description of the Bidirectional DShot feature of the ESC/Motor"
+    },
     "configurationGyroSyncDenom": {
         "message": "Gyro update frequentie"
     },
     "configurationPidProcessDenom": {
         "message": "PID loop frequentie"
+    },
+    "configurationPidProcessDenomHelp": {
+        "message": "De maximale frequentie voor de PID loop is beperkt door de maximale frequentie van updates die kunnen worden verzonden door het gekozen ESC / motor protocol."
     },
     "configurationGyroUse32kHz": {
         "message": "Schakel 32kHz gyro sampling modes aan"
@@ -4472,11 +4766,29 @@
     "configurationBatteryScale": {
         "message": "Voltage Schaal"
     },
+    "configurationCurrentMeterType": {
+        "message": "Stroomsensor type"
+    },
+    "configurationCurrent": {
+        "message": "Stroomsensor"
+    },
+    "configurationCurrentScale": {
+        "message": "Schaal de uitgangsspanning naar milliampère [1/10e mV/A]"
+    },
+    "configurationBatteryMultiwiiCurrent": {
+        "message": "Schakel ondersteuning in voor legacy Multiwii MSP spanning uitvoer"
+    },
     "pidTuningProfile": {
         "message": "Profiel"
     },
+    "pidTuningRateProfile": {
+        "message": "Rateprofiel"
+    },
     "pidTuningRateProfileTip": {
         "message": "Tot 3 verschillende rateprofielen per profiel kunnen worden opgeslagen op uw vluchtcontroller. De rateprofielen bevatten de instellingen voor 'RC Rate', 'Rate', 'RC Expo', 'Throttle' en 'TPA'. Het schakelen tussen deze profielen is mogelijk tijdens het vliegen. Gebruik hiervoor een 3 positieschakelaar. Configureer deze op het tabblad 'Aanpassingen'. Zoek op dit tabblad naar \"Rate Profiel Selectie\"."
+    },
+    "pidTuningRateSetup": {
+        "message": "Basis/Acro Rates"
     },
     "pidTuningRateSetupHelp": {
         "message": "Pas deze waarden aan om uw Rates in te stellen. Gebruik RC Rate om de maximale uiteindelijke rotatie te verhogen. Gebruik Super Rate om de rotatie aan het einde van de stick te beinvloeden. Gebruik RC Expo om het middelste bereid van de stick te beinvloeden.",
@@ -4530,6 +4842,9 @@
     "onboardLoggingMsc": {
         "message": "Massa Opslag Modus"
     },
+    "onboardLoggingRebootMscText": {
+        "message": "Massa Opslag Apparaatmodus Activeren"
+    },
     "dialogConfirmResetTitle": {
         "message": "Bevestig"
     },
@@ -4560,6 +4875,9 @@
     "darkTheme": {
         "message": "Donker thema gebruiken"
     },
+    "pidTuningRatesType": {
+        "message": "Rates Type"
+    },
     "pidTuningRcRateRaceflight": {
         "message": "Rate"
     },
@@ -4568,6 +4886,9 @@
     },
     "pidTuningRateRaceflight": {
         "message": "Acro+"
+    },
+    "pidTuningRcExpoKISS": {
+        "message": "RC Curve"
     },
     "pidTuningRateQuickRates": {
         "message": "Max Rate"
