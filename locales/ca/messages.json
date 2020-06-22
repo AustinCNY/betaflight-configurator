@@ -3453,6 +3453,9 @@
     "pidTuningDTermLowpassDynType": {
         "message": "Tipus filtre Passa-baixos dinàmic 1 del D Term"
     },
+    "pidTuningDTermLowpassDynExpo": {
+        "message": "D Term filtre passa-baixos dinàmic 1 curva Expo"
+    },
     "pidTuningDTermNotchFiltersGroup": {
         "message": "Filtres Notch D Term"
     },
